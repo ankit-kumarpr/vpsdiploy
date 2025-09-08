@@ -65,4 +65,9 @@ router.get('/lawyerrequest/:lawyerId',GetlawyerRequests);
 router.get('/userrequest/:userId',UserRequest);
 
 
+// Agora Chat issuance
+const { issueChatToken } = require("../Controllers/chat.controller");
+
+router.post("/agora-chat/token", issueChatToken);
+
 module.exports = router;

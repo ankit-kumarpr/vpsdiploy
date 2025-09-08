@@ -36,7 +36,11 @@ const BookingSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now
-  }
+  },
+  agora: {
+  type: Object,
+  default: null
+},
 });
 
 module.exports = mongoose.model('Booking', BookingSchema);
